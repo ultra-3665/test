@@ -36,10 +36,10 @@ local tableinsert = table.insert
 -- // Silent Aim Vars
 getgenv().Aiming = {
     Enabled = true,
+
     ShowFOV = false,
     FOV = 0,
     FOVSides = 64,
-    FovFilled = false,
     FOVColour = Color3fromRGB(255, 255, 255),
 
     VisibleCheck = true,
@@ -52,6 +52,8 @@ getgenv().Aiming = {
     TargetPart = {"Head", "HumanoidRootPart"},
 
     Ignored = {
+    LocalPlayer,
+    2721525047
         Teams = {
             {
                 Team = LocalPlayer.Team,
@@ -71,7 +73,7 @@ local circle = Drawingnew("Circle")
 circle.Transparency = 1
 circle.Thickness = 2
 circle.Color = Aiming.FOVColour
-circle.Filled = Aiming.FovFilled
+circle.Filled = false
 Aiming.FOVCircle = circle
 
 -- // Update
