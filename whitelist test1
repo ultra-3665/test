@@ -54,6 +54,7 @@ getgenv().Aiming = {
     Ignored = {
     LocalPlayer,
     2721525047
+    }
         Teams = {
             {
                 Team = LocalPlayer.Team,
@@ -432,4 +433,4 @@ end)
 
 
 
-return Aiming
+return Aiming 
