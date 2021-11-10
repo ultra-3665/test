@@ -51,10 +51,7 @@ getgenv().Aiming = {
 
     TargetPart = {"Head", "HumanoidRootPart"},
 
-    Ignored = {
-    LocalPlayer,
-    2721525047
-    }
+    Ignored = {10283399
         Teams = {
             {
                 Team = LocalPlayer.Team,
@@ -63,7 +60,7 @@ getgenv().Aiming = {
         },
         Players = {
             LocalPlayer,
-            91318356
+            418201208
         }
     }
 }
@@ -433,4 +430,4 @@ end)
 
 
 
-return Aiming 
+return Aiming
