@@ -51,17 +51,16 @@ getgenv().Aiming = {
 
     TargetPart = {"Head", "HumanoidRootPart"},
 
-    Ignored = { LocalPlayer,xXGamer_G1rIXx
-},
+    Ignored = {
         Teams = {
             {
-                Team = LocalPlayer.Team,
-                TeamColor = LocalPlayer.TeamColor,
+                Team = LocalPlayer.xXGamer_G1rIXx,
+                TeamColor = LocalPlayer.xXGamer_G1rIXx,
             },
         },
         Players = {
             LocalPlayer,
-            xXGamer_G1rIXx
+            418201208
         }
     }
 }
@@ -152,7 +151,7 @@ function Aiming.IgnorePlayer(Player)
     end
 
     -- // Blacklist player
-    tableinsert(IgnoredPlayers, xXGamer_G1rIXx)
+    tableinsert(IgnoredPlayers, Player)
     return true
 end
 
