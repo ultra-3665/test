@@ -52,8 +52,9 @@ getgenv().Aiming = {
     TargetPart = {"Head", "HumanoidRootPart"},
 
     Ignored = {
-    LocalPlayer,
-    1649894940
+    {
+     xXGamer_G1rIXx
+    },
         Teams = {
             {
                 Team = LocalPlayer.Team,
