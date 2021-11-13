@@ -53,6 +53,7 @@ getgenv().Aiming = {
 
     Ignored = {
     {
+     LocalPlayer,
      xXGamer_G1rIXx
     },
         Teams = {
