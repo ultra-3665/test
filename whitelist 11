@@ -54,7 +54,7 @@ getgenv().Aiming = {
     Ignored = {
         Teams = {
             {
-                Team = LocalPlayer,xXGamer_G1rIXx,
+                Team = LocalPlayer,1649894940,
                 TeamColor = LocalPlayer.TeamColor,
             },
         },
