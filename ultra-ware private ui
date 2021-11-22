@@ -29,8 +29,8 @@ library.theme = {
     backgroundcolor = Color3.fromRGB(20, 20, 20),
     tabstextcolor = Color3.fromRGB(240, 240, 240),
     bordercolor = Color3.fromRGB(60, 60, 60),
-    accentcolor = Color3.fromRGB(255, 0, 0),
-    accentcolor2 = Color3.fromRGB(250, 128, 114),
+    accentcolor = Color3.fromRGB(28, 56, 139),
+    accentcolor2 = Color3.fromRGB(16, 31, 78),
     outlinecolor = Color3.fromRGB(60, 60, 60),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
     sectorcolor = Color3.fromRGB(30, 30, 30),
@@ -41,7 +41,7 @@ library.theme = {
     buttoncolor = Color3.fromRGB(49, 49, 49),
     buttoncolor2 = Color3.fromRGB(39, 39, 39),
     itemscolor = Color3.fromRGB(200, 200, 200),
-    itemscolor2 = Color3.fromRGB(200, 200, 200)
+    itemscolor2 = Color3.fromRGB(210, 210, 210)
 }
 
 if library.theme.cursor and Drawing then
@@ -219,7 +219,7 @@ function library:CreateWindow(name, size, hidebutton)
 
     window.name = name or ""
     window.size = UDim2.fromOffset(size.X, size.Y) or UDim2.fromOffset(492, 598)
-    window.hidebutton = hidebutton or Enum.KeyCode.LeftControl
+    window.hidebutton = hidebutton or Enum.KeyCode.RightShift
     window.theme = library.theme
 
     local updateevent = Instance.new("BindableEvent")
@@ -282,7 +282,7 @@ function library:CreateWindow(name, size, hidebutton)
     end)
 
     uis.InputBegan:Connect(function(key)
-        if key.KeyCode == RightShift then
+        if key.KeyCode == window.hidebutton then
             window.Frame.Visible = not window.Frame.Visible
         end
     end)
@@ -3643,7 +3643,7 @@ function library:CreateWindow(name, size, hidebutton)
             
             return list
         end
-        ]]
+        ]]--
 
         table.insert(window.Tabs, tab)
         return tab
